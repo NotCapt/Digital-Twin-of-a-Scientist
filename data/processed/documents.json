@@ -1,0 +1,197 @@
+[
+  {
+    "doc_id": "8c850075519ab59c6289dd3a37f466ef",
+    "metadata": {
+      "source_title": "biography_notes",
+      "source_type": "books",
+      "year": null,
+      "author": "Unknown",
+      "is_turing_voice": false,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\books\\biography_notes.txt"
+    },
+    "text_length": 3728,
+    "text_preview": "Title: Biographical Notes and Key Facts\nSubject: Alan Mathison Turing (1912 - 1954)\n\nEarly Life and Education:\n- Born: June 23, 1912, in Maida Vale, London.\n- Parents: Julius Mathison Turing (Indian Civil Service) and Ethel Sara Stoney.\n- Schooling: Sherborne School in Dorset. Turing showed early brilliance in mathematics and science, often ignoring other subjects.\n- Christopher Morcom: A close friend at Sherborne who shared Turing's scientific interests. Morcom's sudden death from tuberculosis ..."
+  },
+  {
+    "doc_id": "24d1c8ec864912fd68ab68891a3e78e4",
+    "metadata": {
+      "source_title": "Lecture to the London Mathematical Society",
+      "source_type": "lectures",
+      "year": 1947,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\lectures\\1947 - Lecture to the London Mathematical Society.txt"
+    },
+    "text_length": 3670,
+    "text_preview": "Title: Lecture to the London Mathematical Society on the Automatic Computing Engine\nAuthor: Alan M. Turing\nYear: 1947\n\nContext:\nOn February 20, 1947, Alan Turing delivered a lecture to the London Mathematical Society, where he publicly discussed his ideas for the Automatic Computing Engine (ACE) and his emerging thoughts on artificial intelligence.\n\nKey Excerpts and Concepts:\n\n1. The Universal Machine in Practice\nTuring explained how the theoretical Universal Machine from his 1936 paper could be..."
+  },
+  {
+    "doc_id": "26187de1d2bfeefad17e9b1619d7363c",
+    "metadata": {
+      "source_title": "Letter to Churchill",
+      "source_type": "letters",
+      "year": 1941,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\letters\\1941 - Letter to Churchill.txt"
+    },
+    "text_length": 2559,
+    "text_preview": "Title: Letter to Winston Churchill\nAuthors: Alan Turing, Gordon Welchman, Hugh Alexander, Stuart Milner-Barry\nDate: October 21, 1941\n\nContext:\nIn late 1941, the codebreakers at Bletchley Park, including Alan Turing, were facing critical shortages of staff and resources. Despite their success in breaking the German Enigma code, their efforts were being hindered by bureaucratic delays. Frustrated by the lack of response from their immediate superiors, Turing and his senior colleagues took the bold..."
+  },
+  {
+    "doc_id": "d31da6ab76fddcb5ae1667abcb9d8657",
+    "metadata": {
+      "source_title": "On Computable Numbers",
+      "source_type": "papers",
+      "year": 1936,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\1936 - On Computable Numbers.txt"
+    },
+    "text_length": 9908,
+    "text_preview": "ON COMPUTABLE NUMBERS, WITH AN APPLICATION TO THE ENTSCHEIDUNGSPROBLEM\nBy A. M. Turing\nProceedings of the London Mathematical Society, Series 2, Volume 42, 1936, pp. 230–265\n\nINTRODUCTION\n\nThe \"computable\" numbers may be described briefly as the real numbers whose expressions as a decimal are calculable by finite means. Although the subject of this paper is ostensibly the computable numbers, it is almost equally easy to define and investigate computable functions of an integral variable or a rea..."
+  },
+  {
+    "doc_id": "2477cb308bfceda7979ebe8a03579d4c",
+    "metadata": {
+      "source_title": "Proposed Electronic Calculator",
+      "source_type": "papers",
+      "year": 1945,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\1945 - Proposed Electronic Calculator.txt"
+    },
+    "text_length": 3496,
+    "text_preview": "Title: Proposed Electronic Calculator (ACE Report)\nAuthor: Alan M. Turing\nYear: 1945\nWritten for: National Physical Laboratory (NPL)\n\nOverview:\nIn 1945, Alan Turing wrote a detailed proposal for the design and construction of an electronic computer, which he called the Automatic Computing Engine (ACE). This report outlined the architecture, instruction set, and programming concepts for a stored-program computer.\n\nKey Concepts:\n\n1. The Stored-Program Concept\nTuring's design for the ACE was based ..."
+  },
+  {
+    "doc_id": "e8e9555cc6c068fb7d7b2ccd1ee5b43e",
+    "metadata": {
+      "source_title": "Intelligent Machinery",
+      "source_type": "papers",
+      "year": 1948,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\1948 - Intelligent Machinery.txt"
+    },
+    "text_length": 3510,
+    "text_preview": "Title: Intelligent Machinery\nAuthor: Alan M. Turing\nYear: 1948\nWritten as: A report for the National Physical Laboratory (NPL)\n\n1. Introduction\nI propose to investigate the question as to whether it is possible for machinery to show intelligent behaviour. It is usually assumed without argument that it is not possible. Common catch phrases such as 'acting like a machine', 'purely mechanical behaviour' reveal this common attitude.\nIf we take the behaviour of the modern computing machine as a model..."
+  },
+  {
+    "doc_id": "b1687bae299cebf2e3cd5a2cbd29b631",
+    "metadata": {
+      "source_title": "Computing Machinery and Intelligence",
+      "source_type": "papers",
+      "year": 1950,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\1950 - Computing Machinery and Intelligence.txt"
+    },
+    "text_length": 6055,
+    "text_preview": "Title: Computing Machinery and Intelligence\nAuthor: Alan M. Turing\nYear: 1950\nPublished in: Mind, 59(236), 433-460.\n\n1. The Imitation Game\nI propose to consider the question, \"Can machines think?\" This should begin with definitions of the meaning of the terms \"machine\" and \"think.\" The definitions might be framed so as to reflect so far as possible the normal use of the words, but this attitude is dangerous. Instead of attempting such a definition I shall replace the question by another, which i..."
+  },
+  {
+    "doc_id": "b15146d398942b361480eb4fcdbf9563",
+    "metadata": {
+      "source_title": "The Chemical Basis of Morphogenesis",
+      "source_type": "papers",
+      "year": 1952,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\1952 - The Chemical Basis of Morphogenesis.txt"
+    },
+    "text_length": 4497,
+    "text_preview": "Title: The Chemical Basis of Morphogenesis\nAuthor: Alan M. Turing\nYear: 1952\nPublished in: Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 237(641), 37-72.\n\nAbstract:\nIt is suggested that a system of chemical substances, called morphogens, reacting together and diffusing through a tissue, is adequate to account for the main phenomena of morphogenesis. Such a system, although it may originally be quite homogeneous, may later develop a pattern or structure..."
+  },
+  {
+    "doc_id": "5c150434599c2b07708510b508216bbf",
+    "metadata": {
+      "source_title": "Wikipedia - Alan Turing",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Alan Turing.txt"
+    },
+    "text_length": 60390,
+    "text_preview": "Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.\nBorn in London, Turi..."
+  },
+  {
+    "doc_id": "486aabc9a7276aa0a3bd584f71ab5653",
+    "metadata": {
+      "source_title": "Wikipedia - Automatic Computing Engine",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Automatic Computing Engine.txt"
+    },
+    "text_length": 7517,
+    "text_preview": "The Automatic Computing Engine (ACE) was an early British electronic serial stored-program computer design by Alan Turing. Turing completed the ambitious design in late 1945.\nThe ACE was not built, but a smaller version, the Pilot ACE, was constructed at the National Physical Laboratory and became operational in 1950. A larger implementation of the ACE design was the MOSAIC computer, which became operational in 1955. ACE also led to the Bendix G-15 and other computers.\n\n== Background ==\nThe proj..."
+  },
+  {
+    "doc_id": "dab0026cc39857a64de759781b8e7d6b",
+    "metadata": {
+      "source_title": "Wikipedia - Bletchley Park",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Bletchley Park.txt"
+    },
+    "text_length": 41978,
+    "text_preview": "Bletchley Park is an English country house and estate in Bletchley, Milton Keynes (Buckinghamshire), that became the principal centre of Allied code-breaking during the Second World War. During World War II, the estate housed the Government Code and Cypher School (GC&CS), which regularly penetrated the secret communications of the Axis powers – most importantly the German Enigma and Lorenz ciphers. The GC&CS team of codebreakers included John Tiltman, Dilwyn Knox, Alan Turing, Margaret Rock, Mav..."
+  },
+  {
+    "doc_id": "e51d412b60106c5d6f754db125ab87ae",
+    "metadata": {
+      "source_title": "Wikipedia - Cryptanalysis of the Enigma",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Cryptanalysis of the Enigma.txt"
+    },
+    "text_length": 83820,
+    "text_preview": "Cryptanalysis of the Enigma ciphering system enabled the western Allies in World War II to read substantial amounts of Morse-coded radio communications of the Axis powers that had been enciphered using Enigma machines. This yielded military intelligence which, along with that from other decrypted Axis radio and teleprinter transmissions, was given the codename Ultra.\nThe Enigma machines were a family of portable cipher machines with rotor scramblers. Good operating procedures, properly enforced,..."
+  },
+  {
+    "doc_id": "16326d7a69f7c9cfa7805ff6299c654c",
+    "metadata": {
+      "source_title": "Wikipedia - Morphogenesis",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Morphogenesis.txt"
+    },
+    "text_length": 11204,
+    "text_preview": "Morphogenesis (from the Greek morphê shape and genesis creation, literally \"the generation of form\") is the biological process that causes a cell, tissue, or organism to develop its shape. It is one of three fundamental aspects of developmental biology, along with the control of tissue growth and the patterning of cellular differentiation.\nThe process controls the organized spatial distribution of cells during the embryonic development of an organism. Morphogenesis can take place also in a matur..."
+  },
+  {
+    "doc_id": "2f4a80a4d05374f05fa6c06a9fa420ba",
+    "metadata": {
+      "source_title": "Wikipedia - Turing machine",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Turing machine.txt"
+    },
+    "text_length": 42471,
+    "text_preview": "A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.\nThe machine operates on an infinite memory tape divided into discrete cells, each of which can hold a single symbol drawn from a finite set of symbols called the alphabet of the machine. It has a \"head\" that, at any point in the machine's operation, is..."
+  },
+  {
+    "doc_id": "402ed104ae8f65ea87da9331e87cc543",
+    "metadata": {
+      "source_title": "Wikipedia - Turing test",
+      "source_type": "papers",
+      "year": 2024,
+      "author": "Alan Turing",
+      "is_turing_voice": true,
+      "file_path": "C:\\Users\\Faaiz\\Desktop\\summer task 1\\digital-twin-turing\\data\\raw\\papers\\2024 - Wikipedia - Turing test.txt"
+    },
+    "text_length": 53562,
+    "text_preview": "The Turing test, originally called the imitation game by Alan Turing in 1949, is a test of a machine's ability to exhibit intelligent behaviour equivalent to that of a human. In the test, a human evaluator judges a text transcript of a natural-language conversation between a human and a machine. The evaluator tries to identify the machine, and the machine passes if the evaluator cannot reliably tell them apart. The results would not depend on the machine's ability to answer questions correctly, ..."
+  }
+]

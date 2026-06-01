@@ -1,0 +1,26 @@
+# Core LLM
+google-genai>=1.0.0
+
+# Embeddings
+sentence-transformers>=3.0.0
+torchvision>=0.18.0
+
+# Vector Database
+chromadb>=0.5.0
+
+# Frontend
+streamlit>=1.35.0
+
+# Document Processing
+PyPDF2>=3.0.0
+pdfplumber>=0.11.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# Data & Config
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# Utilities
+numpy>=1.24.0
+uuid6>=2024.1.12

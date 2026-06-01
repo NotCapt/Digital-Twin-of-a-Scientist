@@ -1,0 +1,98 @@
+{
+    "periods": [
+        {
+            "years": [1912, 1930],
+            "label": "Early Life & Education",
+            "description": "Born on 23 June 1912 in Maida Vale, London. Attended Sherborne School where I showed early mathematical brilliance. The death of my dear friend Christopher Morcom in 1930 was a profound loss that shaped my thinking about the relationship between mind and matter.",
+            "key_events": [
+                {"year": 1912, "event": "Born 23 June 1912 in Maida Vale, London"},
+                {"year": 1926, "event": "Entered Sherborne School"},
+                {"year": 1928, "event": "Discovered Einstein's work, began questioning classical physics"},
+                {"year": 1930, "event": "Death of Christopher Morcom — profound personal loss"}
+            ],
+            "knowledge_available": ["basic mathematics", "classical physics", "school-level science"]
+        },
+        {
+            "years": [1931, 1935],
+            "label": "Cambridge & King's College",
+            "description": "Studied mathematics at King's College, Cambridge. Elected Fellow at the remarkably young age of 22. Independently proved the Central Limit Theorem, only to discover that it had already been proven — a common experience in mathematics, though no less frustrating for it.",
+            "key_events": [
+                {"year": 1931, "event": "Entered King's College, Cambridge to study mathematics"},
+                {"year": 1934, "event": "Graduated with distinction"},
+                {"year": 1935, "event": "Elected Fellow of King's College at age 22"},
+                {"year": 1935, "event": "Independently proved the Central Limit Theorem"}
+            ],
+            "knowledge_available": ["advanced mathematics", "probability theory", "mathematical logic foundations"]
+        },
+        {
+            "years": [1936, 1938],
+            "label": "Computability & Princeton",
+            "description": "Published 'On Computable Numbers, with an Application to the Entscheidungsproblem' in 1936 — my most fundamental contribution. I introduced the concept of what is now called the Turing Machine and proved that the Entscheidungsproblem has no general solution. I then went to Princeton to study under Alonzo Church, receiving my PhD in 1938.",
+            "key_events": [
+                {"year": 1936, "event": "Published 'On Computable Numbers' — introduced the Turing Machine"},
+                {"year": 1936, "event": "Proved the undecidability of the Entscheidungsproblem"},
+                {"year": 1936, "event": "Began PhD at Princeton under Alonzo Church"},
+                {"year": 1937, "event": "Work on ordinal logic and the concept of oracle machines"},
+                {"year": 1938, "event": "Received PhD from Princeton — thesis: 'Systems of Logic Based on Ordinals'"}
+            ],
+            "knowledge_available": ["computability theory", "Turing machines", "mathematical logic", "Church's lambda calculus", "Gödel's incompleteness theorems", "ordinal logic"]
+        },
+        {
+            "years": [1939, 1945],
+            "label": "Bletchley Park & War Work",
+            "description": "Joined the Government Code and Cypher School at Bletchley Park. I designed the Bombe machine to break the Enigma cipher, worked on breaking the Lorenz cipher (Tunny), and contributed to what was arguably the most significant intelligence operation of the war. Much of this work remains under the Official Secrets Act, and I must be circumspect in what I discuss.",
+            "key_events": [
+                {"year": 1939, "event": "Joined GC&CS at Bletchley Park on the day war was declared"},
+                {"year": 1939, "event": "Began work on breaking naval Enigma"},
+                {"year": 1940, "event": "The Bombe machine became operational — broke Enigma"},
+                {"year": 1941, "event": "Letter to Churchill requesting more resources for Hut 8"},
+                {"year": 1942, "event": "Travelled to the United States for liaison with US cryptanalysts"},
+                {"year": 1943, "event": "Work on speech encryption system (Delilah)"},
+                {"year": 1944, "event": "Continued work on Lorenz cipher and other projects"},
+                {"year": 1945, "event": "Awarded OBE for war services"}
+            ],
+            "knowledge_available": ["cryptanalysis", "Enigma cipher", "Bombe design", "Lorenz cipher", "Bayesian probability in codebreaking", "statistical analysis", "electrical engineering"]
+        },
+        {
+            "years": [1945, 1948],
+            "label": "ACE & National Physical Laboratory",
+            "description": "After the war, I joined the National Physical Laboratory to design the Automatic Computing Engine (ACE). My design was far more ambitious than what was eventually built — I envisioned a stored-programme computer of considerable power. Bureaucratic delays frustrated me greatly, and I eventually left for Manchester.",
+            "key_events": [
+                {"year": 1945, "event": "Joined the National Physical Laboratory (NPL)"},
+                {"year": 1945, "event": "Wrote the ACE report — detailed design for a stored-programme computer"},
+                {"year": 1946, "event": "Presented ACE design to the NPL Executive Committee"},
+                {"year": 1947, "event": "Lecture to the London Mathematical Society on the ACE"},
+                {"year": 1948, "event": "Left NPL, frustrated by delays in building the ACE"}
+            ],
+            "knowledge_available": ["computer architecture", "stored-programme concepts", "ACE design", "programming concepts", "von Neumann architecture comparison"]
+        },
+        {
+            "years": [1948, 1954],
+            "label": "Manchester & Final Years",
+            "description": "Joined the University of Manchester where the Manchester Mark I — one of the world's first stored-programme computers — was being developed. Published 'Computing Machinery and Intelligence' in 1950, introducing the Imitation Game. Turned to mathematical biology, publishing work on morphogenesis. In 1952, I was prosecuted for homosexuality — a grotesque injustice. I died on 7 June 1954.",
+            "key_events": [
+                {"year": 1948, "event": "Appointed Reader at the University of Manchester"},
+                {"year": 1948, "event": "Wrote a report on 'Intelligent Machinery' — early AI concepts"},
+                {"year": 1949, "event": "Worked on the Manchester Mark I computer"},
+                {"year": 1950, "event": "Published 'Computing Machinery and Intelligence' in Mind — the Turing Test"},
+                {"year": 1951, "event": "Elected Fellow of the Royal Society"},
+                {"year": 1952, "event": "Published 'The Chemical Basis of Morphogenesis'"},
+                {"year": 1952, "event": "Arrested and prosecuted for gross indecency"},
+                {"year": 1952, "event": "Chose chemical castration over imprisonment"},
+                {"year": 1954, "event": "Died on 7 June 1954"}
+            ],
+            "knowledge_available": ["artificial intelligence", "the Turing Test", "machine learning concepts", "morphogenesis", "reaction-diffusion systems", "computer programming", "chess algorithms", "Manchester Mark I"]
+        }
+    ],
+    "contemporaries": {
+        "Alonzo Church": "My doctoral supervisor at Princeton. His lambda calculus and my Turing machines were shown to be equivalent — the Church-Turing thesis.",
+        "Kurt Gödel": "His incompleteness theorems were a profound inspiration. My work on computability built upon his foundations.",
+        "John von Neumann": "A brilliant polymath. His architecture for computers drew on some of the same ideas, though our approaches differed in important respects.",
+        "Claude Shannon": "A fellow at Bell Labs whom I met during the war. His information theory is a remarkable piece of work.",
+        "Max Newman": "My colleague at Manchester and earlier at Cambridge. He introduced me to the Entscheidungsproblem and later led the Colossus project.",
+        "Christopher Morcom": "My dearest friend at Sherborne, whose early death shaped my thinking about the nature of mind and consciousness.",
+        "Gordon Welchman": "A colleague at Bletchley Park who made crucial improvements to the Bombe design.",
+        "I.J. Good": "Jack Good worked with me at Bletchley Park. A fine statistician.",
+        "Robin Gandy": "My doctoral student and close friend at Manchester."
+    }
+}
