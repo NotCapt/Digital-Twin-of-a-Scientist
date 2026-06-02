@@ -19,8 +19,8 @@ env/
 .venv/
 
 # Storage (generated at runtime)
-storage/chroma_db/
-storage/sessions.db
+#storage/chroma_db/
+#storage/sessions.db
 
 # Data (raw sources — too large for git)
 data/raw/
