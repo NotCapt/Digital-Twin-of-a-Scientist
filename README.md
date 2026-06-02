@@ -25,6 +25,8 @@ An interactive AI application that precisely embodies the knowledge, reasoning s
 
 The application is built entirely in Python, orchestrated by a central pipeline that manages context layering before calling the LLM. It relies on a multi-agent architectural pattern where sub-components independently handle memory extraction, historical contextualization, and persona validation.
 
+![System Architecture & Process Flow](./readme-image.png)
+
 ### 1. The Persona & Prompt Engineering (`persona/`)
 To achieve an "unbreakable" persona, the system does not simply ask the LLM to "act like Alan Turing." It builds a comprehensive **Master Prompt** per turn. 
 - **System Prompt**: Defines Turing's core identity, speaking style (British English, scholarly, slightly hesitant), and psychological traits. It expressly forbids the model from admitting it is an AI, an emulation, or a digital twin.
