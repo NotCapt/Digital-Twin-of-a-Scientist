@@ -21,27 +21,44 @@ An interactive AI application that precisely embodies the knowledge, reasoning s
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture & Approach in Detail
 
-The application is built entirely in Python, orchestrated by a central pipeline that manages context before calling the LLM. 
+The application is built entirely in Python, orchestrated by a central pipeline that manages context layering before calling the LLM. It relies on a multi-agent architectural pattern where sub-components independently handle memory extraction, historical contextualization, and persona validation.
 
-### 1. The RAG Pipeline (`rag/`)
-When the user sends a message, the `Retriever` queries a local **ChromaDB** collection (`turing_knowledge`) using cosine similarity against the `all-MiniLM-L6-v2` embedding model. It fetches the top-k most relevant historical chunks from Turing's papers or Wikipedia, passing them to the Orchestrator to ground the LLM's response.
+### 1. The Persona & Prompt Engineering (`persona/`)
+To achieve an "unbreakable" persona, the system does not simply ask the LLM to "act like Alan Turing." It builds a comprehensive **Master Prompt** per turn. 
+- **System Prompt**: Defines Turing's core identity, speaking style (British English, scholarly, slightly hesitant), and psychological traits. It expressly forbids the model from admitting it is an AI, an emulation, or a digital twin.
+- **Contextual Injection**: The prompt is dynamically appended with the retrieved RAG context, recent episodic memory, semantic facts about the user, and the timeline context.
+- **Validator**: An outbound validation layer (`PersonaValidator`) checks the LLM's response for AI disclaimers (e.g., "As an AI model...") and automatically strips them before the user sees the output.
 
-### 2. The Memory Manager (`memory/`)
-The memory system operates on two tracks:
-- **Short-Term Memory**: A standard queue of the most recent `N` messages in the current session.
-- **Long-Term Memory**: A separate background LLM call runs continuously, analyzing the user's messages for facts (e.g., "The user is 16 years old," "The user likes cryptography"). If a fact is detected, it is embedded into a separate ChromaDB collection (`user_facts`). On subsequent turns, the Retriever searches `user_facts` alongside the knowledge base, injecting past memories into the prompt.
+### 2. The Dual-Track Memory Manager (`memory/`)
+The memory system is designed to simulate human recollection, operating on two asynchronous tracks:
+- **Episodic (Short-Term) Memory**: A sliding window queue that maintains the last `N` messages of the current session. If the conversation runs long, an LLM summarization task compresses older turns into a dense summary, maintaining context while saving token limits.
+- **Semantic (Long-Term) Memory**: A background LLM process runs continuously, analyzing every exchange for personal facts about the user (e.g., "The user is 16 years old," "The user is a cryptography student"). If a fact is detected, it is extracted as JSON, embedded via `all-MiniLM-L6-v2`, and stored in a separate ChromaDB collection (`user_facts`). On subsequent turns—even across entirely new sessions—the Retriever queries this database to proactively inject past memories into Turing's prompt, allowing him to "remember" you.
 
-### 3. The Orchestrator (`core/orchestrator.py`)
-The orchestrator acts as the "brain." It intercepts the user's message and performs the following synchronous workflow:
-1. Retrieves historical documents from RAG.
-2. Retrieves personal user facts from Long-Term Memory.
-3. Retrieves the simulated current year from the Timeline Engine.
-4. Compiles the Master Prompt (System Persona + RAG Context + Memory Context + Conversation History).
-5. Calls the Google Gemini 1.5 API.
-6. Returns the response to the Streamlit UI.
-7. Asynchronously fires a background job to extract new long-term facts.
+### 3. The Retrieval-Augmented Generation (RAG) Pipeline (`rag/`)
+To ensure Turing's responses are historically accurate and grounded in his actual work, the system uses a sophisticated RAG architecture:
+- **Ingestion & Scraper**: The system programmatically scrapes Wikipedia via the `scrape_sources.py` script for biographical and historical context (Bletchley Park, Enigma, ACE). It also ingests raw `.txt` versions of Turing's primary papers and letters.
+- **Chunking & Embedding**: Documents are split using a `TextChunker` (512-token chunks with 50-token overlap) to preserve semantic boundaries. They are then embedded using the `all-MiniLM-L6-v2` transformer and stored in a ChromaDB vector store.
+- **Retrieval Engine**: When the user asks a question, the `Retriever` queries ChromaDB using cosine similarity, fetching the top-k most relevant chunks to ground the LLM's response. Primary source documents (Turing's own writings) are given a multiplicative boost to prioritize his actual voice over encyclopedic summaries.
+
+### 4. The Timeline Engine (`timeline/`)
+To imbue the Twin with a sense of historical placement, the `TimelineEngine` parses the user's input for temporal markers (e.g., "What are you working on in 1941?"). 
+- If a specific year is detected, the Engine instructs the RAG retriever to *only* pull documents from that year or earlier.
+- It also injects a prompt directive forcing the LLM to restrict its world knowledge to that specific era.
+- If the user asks about post-1954 (Turing's death) technologies like modern smartphones, the Engine detects a "post-death topic" and forces the LLM to speculate conceptually based on his 1950s theories of computation, rather than breaking character.
+
+### 5. The Orchestrator (`core/orchestrator.py`)
+The Orchestrator acts as the "brain," performing the synchronous workflow for every message:
+1. Intercepts the user's message.
+2. Calls the **Timeline Engine** to detect era constraints.
+3. Calls the **RAG Retriever** to fetch historical knowledge.
+4. Calls the **Memory Manager** to fetch semantic user facts and episodic history.
+5. Compiles the **Master Prompt**.
+6. Calls the **Google Gemini 1.5** API to generate the response.
+7. Post-processes the response via the **Persona Validator**.
+8. Returns the response to the Streamlit UI.
+9. Asynchronously fires background jobs to extract new long-term facts for future use.
 
 ---
 
