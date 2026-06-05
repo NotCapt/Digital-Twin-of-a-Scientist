@@ -69,7 +69,7 @@ class TimelineEngine:
         year_match = re.search(r"\b(1[89]\d{2}|20[0-2]\d)\b", query)
         if year_match:
             year = int(year_match.group(1))
-            period = self._get_period_for_year(year)
+            period = self.get_period_for_year(year)
             return {
                 "year": year,
                 "year_range": (period["years"][0], period["years"][1]) if period else None,
@@ -99,7 +99,7 @@ class TimelineEngine:
         query_lower = query.lower()
         for keyword, year_range in period_keywords.items():
             if keyword in query_lower:
-                period = self._get_period_for_year(year_range[0])
+                period = self.get_period_for_year(year_range[0])
                 return {
                     "year": None,
                     "year_range": year_range,
@@ -119,7 +119,7 @@ class TimelineEngine:
 
         for pattern, year_range in relative_patterns.items():
             if re.search(pattern, query_lower):
-                period = self._get_period_for_year(year_range[0])
+                period = self.get_period_for_year(year_range[0])
                 return {
                     "year": None,
                     "year_range": year_range,
@@ -129,7 +129,7 @@ class TimelineEngine:
 
         return None
 
-    def _get_period_for_year(self, year: int) -> Optional[dict]:
+    def get_period_for_year(self, year: int) -> Optional[dict]:
         """Get the period that contains a given year."""
         for period in self.periods:
             start, end = period["years"]
